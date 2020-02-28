@@ -64,4 +64,4 @@ server.delete('/api/messages/:id', (req, res) => {
     res.status(204).send();
 });
 
-server.listen(9999);
+server.listen(process.env.PORT || 9999);
